@@ -30,6 +30,6 @@ end
 
 # reqires my_firewall, which is part of the base role
 firewall_rule 'deluge' do
-  port node['deluge']['host_port'] = 8112
+  port node['deluge']['host_port']
   command :allow
 end
