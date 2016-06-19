@@ -9,7 +9,7 @@
   node['deluge']['downloads_volume']
 ).each do |d|
   directory d do
-    recurse true
+    recursive true
     action :create
   end
 end
